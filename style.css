@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(new-york.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container .card{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px #00000080;
+    border-radius: 15px;
+    background: #ffffff1a;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ffffff80;
+    border-left: 1px solid #ffffff80;
+    backdrop-filter:blur(2px);
+}
+
+.container .card .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .card .content:hover{
+    transform: translateY(0);
+    opacity: 1;
+    cursor: default;
+}
+
+.container .card .content h2{
+    position: absolute;
+    top: -80px;
+    right: 30px;
+    font-size: 8em;
+    color: #ffffff02;
+    pointer-events: none;
+}
+
+.container .card .content h3{
+    font-size: 1.8em;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.container .card .content p{
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 300;
+
+}
+
+
+.container .card .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500px;
+    box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
+}
